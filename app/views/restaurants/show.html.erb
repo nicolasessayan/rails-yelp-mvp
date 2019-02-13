@@ -1,0 +1,19 @@
+<br>
+<%= link_to "Back to full list", restaurants_path, class: "btn btn-primary"%>
+<br>
+<h1><%= @restaurant.name %></h1>
+<h4><%= @restaurant.address %></h4>
+<h4><%= @restaurant.phone_number %></h4>
+<h4><%= @restaurant.category %></h4>
+<br>
+<h4>List of reviews:</h4>
+
+<%= link_to "Add a new review", new_restaurant_review_path(@restaurant), class: "btn btn-success"%>
+
+<ul>
+<% @restaurant.reviews.each do |review| %>
+  <li><%= review.rating %></li>
+  <li><%= review.content %></li>
+  <br>
+<% end %>
+</ul>
