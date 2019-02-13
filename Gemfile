@@ -30,7 +30,7 @@ gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'jquery-rails' # Add this line if you use Rails 5.1 or higher
-gem 'simple_form'
+gem 'simple_form', '~> 4.1.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
